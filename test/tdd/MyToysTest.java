@@ -30,8 +30,8 @@ public class MyToysTest {
     
     @Test(expected = IllegalArgumentException.class)
     public void testExceptionNegativeCases(){
-        cF(6);
-        cF(5);
+        cF(-6);
+        cF(-5);
     }
     
     @Test(expected = IllegalArgumentException.class)
