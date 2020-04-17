@@ -31,4 +31,6 @@ public class MyToy {
     
     //thế thì việc làm bằng clean and build kết hợp với ant chạy bộ test đảm ảo xanh -> jar
     //có cách tự động vi diệu
+    //Dev push code lên trên git server
+    //Có ai đó theo dõi 
 }
