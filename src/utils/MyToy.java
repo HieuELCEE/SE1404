@@ -17,9 +17,9 @@ public class MyToy {
     // n! bung no nhanh lam, cho nen minh xai long
     //danh cho CI/Cou
     public static long cF(int n){
-//        if (n < 0 || n > 15){
-//            throw new IllegalArgumentException("n must between 0....15");
-//        }
+        if (n < 0 || n > 15){
+            throw new IllegalArgumentException("n must between 0....15");
+        }
         if (n == 0 || n == 1)
             return 1;
         return n * cF(n -1);
