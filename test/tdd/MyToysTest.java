@@ -19,7 +19,7 @@ public class MyToysTest {
     @Test
     public void testSuccessfulCases(){
         assertEquals(1, cF(0));
-        assertEquals(120, cF(5));
+        assertEquals(8, cF(5));
         assertEquals(720, cF(6));
     }
     
