@@ -17,16 +17,27 @@ import static utils.MyToy.cF;
 public class MyToysTest {
     
     @Test
-    public void testSuccessfulCases(){
+    public void testSuccessfulLower10Cases(){
         assertEquals(1, cF(0));
         assertEquals(120, cF(5));
         assertEquals(720, cF(6));
     }
+    @Test
+    public void testSuccessfulUpper10Cases(){
+        assertEquals(3_628_800, cF(10));
+        assertEquals(39_916_800, cF(11));
+    }
     
     @Test(expected = IllegalArgumentException.class)
-    public void testExceptionCases(){
-        cF(-6);
-        cF(-5);
+    public void testExceptionNegativeCases(){
+        cF(6);
+        cF(5);
+    }
+    
+    @Test(expected = IllegalArgumentException.class)
+    public void testExceptionGreater15Cases(){
+        cF(16);
+        cF(17);
     }
     
     
